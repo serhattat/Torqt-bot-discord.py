@@ -74,11 +74,11 @@ game = Game()
 
 
 @Bot.command()
-async def zar(ctx, *args):
-    if "at" in args:
+async def roll(ctx, *args):
+    if "dice" in args:
         await ctx.send("{}".format(game.roll_dice()))
     else:
-        await ctx.send("what should i do with dice?")
+        await ctx.send("what should i do with roll?")
 
 @Bot.command()
 async def rolldice(ctx, dice: str):
